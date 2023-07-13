@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+  function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+  </script>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Web layout.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  padding:100px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 0ch;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+} 
+.resized-image {
+    width: 100px;; /* Set the desired width */
+    height:auto;
+    position:relative;
+    top: 10px;
+    right: 600px;
+
+    
+  }
+
+.resize-image{
+    width: 600px;
+    height: auto;
+}
+    
+    
+
+</style>
+<body>
+    
+        <div class="header">
+            
+            <img class="resized-image" src="WhatsApp Image 2023-07-03 at 23.36.02.jpg">
+            <ul>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="services.html">SERVICES</a></li> 
+                <li><a href="About.html">ABOUT</a></li> 
+                <li><a href="index layout.html">HOME</a></li>
+                </ul>
+          </div>
+ 
+        
+        <nav>
+          
+
+          <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            Name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+          </form>
+            
+           
+        <main>
+        <div class="background.img">
+            <h1>PET WORLD SERVICES</h1>
+            <P> World class services for your pets</P>
+            <a href="sign up.html" class="hero-btn">Sign-up</a>
+        </div>
+        </main>
+        </nav>
+    </section>
+
+    <h2>Our services include</h2>
+        <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg"><img class="resize-image" src="WhatsApp Image 2023-07-04 at 11.02.29.jpg" alt="Cinque Terre" width="500" height="500"></a>
+        <div class="desc"><p><h3>SERVICES</h3></p>
+            <a href="sign up.html" class="hero-btn">Read more</a>
+         </div>
+      </div>
+      <div class="gallery" >
+        <a target="_blank" href="img_forest.jpg">
+          <img src="WhatsApp Image 2023-07-04 at 11.19.38.jpg" alt="dog" width="500" height="500">
+        </a>
+        <div class="desc"><p><h3>GROOMING SERVICES OFFERED BY OUR EXPERTS</h3></p>
+            <a href="sign up.html" class="hero-btn">Read more</a>
+        </div>
+      </div>
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="WhatsApp Image 2023-07-04 at 11.19.37.jpg" alt="Forest" width="500" height="500">
+        </a>
+        <div class="desc"><p><h3>PET FOOD AND SNACKS FROM LEADING BRANDS</h3></p>
+            <a href="sign up.html" class="hero-btn">Read more</a>
+            
+        </div>
+        </div>
+        <div class="about-col">
+            <h2> ABOUT US</h2>
+            <P>We are an organisation dedicated to the welfare and well being of pets.Having had over ten year exprience in the industry we are a perfect choice for you and your pets we ensure that your pets needs are met and provide them with a safe hevean on earth</P>
+        </div>
+        <footer>
+        <div class="footer">
+            <ul>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                          <li> <a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+                     <li> <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a><span></span></li>
+                        <li><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a><span> </span></li>
+                        <li><a href="mailto:example@example.com"><i class="far fa-envelope"></i></a><span></span></li>
+            </ul>
+                    </div>
+                    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            
+        
+    
+    
+      
+      
+
+    
+</body>
+</html>
+
